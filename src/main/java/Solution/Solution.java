@@ -34,9 +34,9 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println("Найденные корни уровнения: " + solution.resultDis(1,-4,-5) + ", Дискриминант=" + solution.D);
-        System.out.println("Найденные корни уровнения: " + solution.resultDis(3,-4,2) + ", Дискриминант=" + solution.D);
-        System.out.println("Найденные корни уровнения: " + solution.resultDis(3,-18,27) + ", Дискриминант=" + solution.D);
+        System.out.println("Найденные корни уравнения: " + solution.resultDis(1,-4,-5) + ", Дискриминант=" + solution.D);
+        System.out.println("Найденные корни уравнения: " + solution.resultDis(3,-4,2) + ", Дискриминант=" + solution.D);
+        System.out.println("Найденные корни уравнения: " + solution.resultDis(3,-18,27) + ", Дискриминант=" + solution.D);
     }
 }
 
