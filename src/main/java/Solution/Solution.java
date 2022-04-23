@@ -1,42 +1,25 @@
 package Solution;
 
-import java.util.Arrays;
-
 public class Solution {
-    private int a;
-    private int b;
-    private int c;
-    private double D;
-    private double[] x = new double[2];
-    String answer;
+    private double x1;
+    private double x2;
 
-
-
-    public Object resultDis (int a, int b, int c)
-    {
-        final int i = b * b - 4 * a * c;
-        this.D = i;
-        this.a = a;
-        this.b = b;
-        this.c = c;
-
-        if (i > 0 || i == 0) {
-            this.x [0] = (-b + Math.sqrt(D)) / (2 * a);
-            this.x [1] = (-b - Math.sqrt(D)) / (2 * a);
-            return this.answer = Arrays.toString(x);
-        } else {
-            return this.answer = null;
-        }
+    public double getX1() {
+        return x1;
     }
 
+    public void setX1(double x1) {
+        this.x1 = x1;
+    }
 
-// Проверка программы, черновик
-    public static void main(String[] args) {
-        Solution solution = new Solution();
+    public double getX2() {
+        return x2;
+    }
 
-        System.out.println("Найденные корни уравнения: " + solution.resultDis(1,-4,-5) + ", Дискриминант=" + solution.D);
-        System.out.println("Найденные корни уравнения: " + solution.resultDis(3,-4,2) + ", Дискриминант=" + solution.D);
-        System.out.println("Найденные корни уравнения: " + solution.resultDis(3,-18,27) + ", Дискриминант=" + solution.D);
+    public void setX2(double x2) {
+        this.x2 = x2;
+    }
+    public String toString() {
+        return x1 + " " + x2;
     }
 }
-
