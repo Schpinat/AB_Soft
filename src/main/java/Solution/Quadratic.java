@@ -25,19 +25,5 @@ public class Quadratic {
         return solution;
     }
 
-
-
-
-// Проверка программы, черновик
-    public static void main(String[] args) {
-        Quadratic quadratic = new Quadratic();
-        quadratic.resultDis(1,-4,-5);
-        System.out.println("Найденные корни уравнения: " +  quadratic.solution + ", Дискриминант=" + quadratic.D);
-        quadratic.resultDis(3,-4,2);
-        System.out.println("Найденные корни уравнения: " + quadratic.solution + ", Дискриминант=" + quadratic.D);
-        quadratic.resultDis(3,-18,27);
-        System.out.println("Найденные корни уравнения: " + quadratic.solution + ", Дискриминант=" + quadratic.D);
-
-    }
 }
 
